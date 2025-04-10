@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const port = 8080;
-const listing = require("./models/listing.js");
-const Listing = require("./models/listing.js");
+const Listing = require("../models/listing.js");
+const path = require("path");
 
 
 async function main(){
@@ -21,7 +21,7 @@ app.get("/", (req,res)=>{
 })
 
 app.get("/testListing", async (req,res)=>{
-    const sampleListing = new Listing({
+    let sampleListing = new Listing({
         title: "my New Villa",
         description: "You can have a best view of the sea",
         price: 1200,
