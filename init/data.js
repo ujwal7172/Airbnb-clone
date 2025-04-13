@@ -291,6 +291,7 @@ const sampleListings = [
       price: 1600,
       location: "Charleston",
       country: "United States",
+      
     },
     {
       title: "Modern Apartment in Tokyo",
